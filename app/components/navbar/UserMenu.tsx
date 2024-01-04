@@ -11,15 +11,11 @@ import MenuItem from "./MenuItem";
 
 const UserMenu= () => {
 
-
-
-
-
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleOpen = useCallback(() => {
     setIsOpen(value=>!value)
-  }, [])
+  }, []);
 
   return ( 
     <div className="relative">
@@ -34,13 +30,14 @@ const UserMenu= () => {
             py-3 
             px-4 
             rounded-full 
-            hover:bg-neutral-100 
+            hover:bg-neutral-100
             transition 
             cursor-pointer
           "
         >
           Airbnb your home
         </div>
+        
         <div 
         onClick={toggleOpen}
         className="
