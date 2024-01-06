@@ -43,23 +43,7 @@ const LoginModal = () => {
   (data) => {
     setIsLoading(true);
 
-    // signIn('credentials', { 
-    //   ...data, 
-    //   redirect: false,
-    // })
-    // .then((callback) => {
-    //   setIsLoading(false);
 
-    //   if (callback?.ok) {
-    //     toast.success('Logged in');
-    //     router.refresh();
-    //     loginModal.onClose();
-    //   }
-      
-    //   if (callback?.error) {
-    //     toast.error(callback.error);
-    //   }
-    // });
   }
 
   const onToggle = useCallback(() => {
@@ -95,18 +79,18 @@ const LoginModal = () => {
 
   const footerContent = (
     <div className="flex flex-col gap-4 mt-3">
-      <hr />
+      <hr/>
       <Button 
         outline 
         label="Continue with Google"
         icon={FcGoogle}
-        onClick={}
+      
       />
       <Button 
         outline 
         label="Continue with Github"
         icon={AiFillGithub}
-        onClick={}
+        
       />
       <div className="
       text-neutral-500 text-center mt-4 font-light">
