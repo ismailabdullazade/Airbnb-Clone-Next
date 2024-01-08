@@ -30,6 +30,7 @@ const Modal: React.FC<ModalProps> = ({
   secondaryAction,
   secondaryActionLabel
 }) => {
+  
   const [showModal, setShowModal] = useState(isOpen);
 
   useEffect(() => {
